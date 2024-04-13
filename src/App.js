@@ -39,7 +39,7 @@ function App() {
   };
 
   const displayTotal = function () {
-    if (numberOfPeople || sumEntered === "0") {
+    if (numberOfPeople === "0" || sumEntered === "0") {
       return "0";
     }
     if (sumEntered && tipPerPeople && numberOfPeople) {
@@ -56,7 +56,7 @@ function App() {
   };
 
   const displayTotalTip = function () {
-    if (numberOfPeople || sumEntered === "0") {
+    if (numberOfPeople === "0" || sumEntered === "0") {
       return "0";
     }
     if (sumEntered && tipPerPeople && numberOfPeople) {
