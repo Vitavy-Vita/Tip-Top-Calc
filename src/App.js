@@ -44,7 +44,7 @@ function App() {
       const people = parseFloat(numberOfPeople);
       const tip = tipPerPeople;
       const totalTips = bill * (tip / 100);
-      const total = (bill / people + totalTips).toFixed(2);
+      const total = (bill / people + (totalTips / people)).toFixed(2);
 
       return total;
     } else {
